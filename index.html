@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquey.js"></script>
+</head>
+<body>
+    <div class="contains">
+        <div class="ball">A</div>
+        <div class="ball">B</div>
+        <div class="ball">C</div>
+        <div class="ball">D</div>
+        <div class="ball">E</div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".ball").hover(function(){
+                $(".ball").css("filter","brightness(50%)");
+                $(this).css("filter","brightness(100%)");
+               
+            })
+            $("body , .contains").hover(function(){
+                $(".ball").css("filter","brightness(100%)");
+               
+            })
+        })
+    </script>
+</body>
+</html>
